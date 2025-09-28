@@ -3,7 +3,7 @@
 -- V1.0 : August 2024 / Guillaume Nivat
 -- ***************************************************************************************************
 
-CREATE FUNCTION [tools].[GetNivatSimilarity]
+CREATE FUNCTION [tools].[GetGuimmSimilarity]
 (
     @s      NVARCHAR(4000),
     @t      NVARCHAR(4000)
@@ -50,4 +50,5 @@ BEGIN
     END;
 	
     RETURN @cntSim/(cast(@maxSim+1 as float));
+
 END;
